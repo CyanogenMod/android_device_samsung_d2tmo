@@ -15,39 +15,39 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/d2att/d2att-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/d2tmo/d2tmo-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/d2att/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/d2tmo/overlay
 
 # Kernel and modules
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/samsung/d2att/prebuilt/kernel
+    LOCAL_KERNEL := device/samsung/d2tmo/prebuilt/kernel
 else
     LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-    device/samsung/d2att/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
-    device/samsung/d2att/modules/btlock.ko:system/lib/modules/btlock.ko \
-    device/samsung/d2att/modules/dhd.ko:system/lib/modules/dhd.ko \
-    device/samsung/d2att/modules/dma_test.ko:system/lib/modules/dma_test.ko \
-    device/samsung/d2att/modules/exfat_core.ko:system/lib/modules/exfat_core.ko \
-	device/samsung/d2att/modules/exfat_fs.ko:system/lib/modules/exfat_fs.ko \
-    device/samsung/d2att/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
-    device/samsung/d2att/modules/qce40.ko:system/lib/modules/qce40.ko \
-    device/samsung/d2att/modules/qcedev.ko:system/lib/modules/qcedev.ko \
-    device/samsung/d2att/modules/qcrypto.ko:system/lib/modules/qcrypto.ko \
-    device/samsung/d2att/modules/reset_modem.ko:system/lib/modules/reset_modem.ko \
-    device/samsung/d2att/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
-    device/samsung/d2att/modules/spidev.ko:system/lib/modules/spidev.ko
+    device/samsung/d2tmo/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+    device/samsung/d2tmo/modules/btlock.ko:system/lib/modules/btlock.ko \
+    device/samsung/d2tmo/modules/dhd.ko:system/lib/modules/dhd.ko \
+    device/samsung/d2tmo/modules/dma_test.ko:system/lib/modules/dma_test.ko \
+    device/samsung/d2tmo/modules/exfat_core.ko:system/lib/modules/exfat_core.ko \
+	device/samsung/d2tmo/modules/exfat_fs.ko:system/lib/modules/exfat_fs.ko \
+    device/samsung/d2tmo/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
+    device/samsung/d2tmo/modules/qce40.ko:system/lib/modules/qce40.ko \
+    device/samsung/d2tmo/modules/qcedev.ko:system/lib/modules/qcedev.ko \
+    device/samsung/d2tmo/modules/qcrypto.ko:system/lib/modules/qcrypto.ko \
+    device/samsung/d2tmo/modules/reset_modem.ko:system/lib/modules/reset_modem.ko \
+    device/samsung/d2tmo/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+    device/samsung/d2tmo/modules/spidev.ko:system/lib/modules/spidev.ko
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/d2att/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    device/samsung/d2tmo/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
 
 # Inherit from d2-common
 $(call inherit-product, device/samsung/d2-common/d2-common.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/d2att/d2att-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/d2tmo/d2tmo-vendor.mk)

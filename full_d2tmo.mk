@@ -27,12 +27,12 @@ PRODUCT_PACKAGES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from d2att device
-$(call inherit-product, device/samsung/d2att/device.mk)
+# Inherit from d2tmo device
+$(call inherit-product, device/samsung/d2tmo/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_d2att
-PRODUCT_DEVICE := d2att
+PRODUCT_NAME := full_d2tmo
+PRODUCT_DEVICE := d2tmo
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SAMSUNG-SGH-I747
+PRODUCT_MODEL := SGH-T999

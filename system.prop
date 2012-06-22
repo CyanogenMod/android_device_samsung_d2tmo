@@ -1,4 +1,4 @@
-# system.prop for SGH-I747
+# system.prop for SGH-T999
 #
 
 rild.libpath=/system/lib/libril-qc-qmi-1.so
@@ -23,8 +23,8 @@ media.stagefright.enable-fma2dp=false
 media.stagefright.enable-aac=true
 media.stagefright.enable-qcp=true
 
-lpa.decode=true
-lpa.use-stagefright=true
+lpa.decode=false
+lpa.use-stagefright=false
 
 #
 # system props for the data modules
