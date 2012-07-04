@@ -43,10 +43,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/d2tmo/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
     device/samsung/d2tmo/modules/spidev.ko:system/lib/modules/spidev.ko
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    device/samsung/d2tmo/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
-
 # Inherit from d2-common
 $(call inherit-product, device/samsung/d2-common/d2-common.mk)
 
