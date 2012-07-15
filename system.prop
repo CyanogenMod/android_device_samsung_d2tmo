@@ -70,7 +70,7 @@ persist.gps.qmienabled=true
 
 # Fields for custom RIL
 # MAX PROP NAME is 31 chars --|
-ro.telephony.ril_class=SamsungQualcommUiccRIL
+ro.telephony.ril_class=SamsungQualcommD2RIL
 telephony.lteOnGsmDevice=1
 
 # Property to allow IccCard to properly handle APPSTATE_SUBSCRIPTION_PERSO
