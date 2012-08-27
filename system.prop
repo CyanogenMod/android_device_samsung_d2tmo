@@ -14,15 +14,9 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 
-dev.pm.dyn_samplingrate=1
-
-#system props for the MM modules
-media.stagefright.enable-player=true
-media.stagefright.enable-http=true
-media.stagefright.enable-fma2dp=false
-media.stagefright.enable-aac=true
-media.stagefright.enable-qcp=true
-
+#
+# low power audio (currently disabled)
+#
 lpa.decode=false
 lpa.use-stagefright=false
 
@@ -86,6 +80,4 @@ persist.radio.add_power_save=1
 persist.radio.snapshot_disabled=1
 
 com.qc.hardware=true
-com.qc.hdmi_out=true
-ro.hdmi.enable=true
 
