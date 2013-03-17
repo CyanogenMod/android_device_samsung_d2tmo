@@ -30,5 +30,5 @@
 TARGET_OTA_ASSERT_DEVICE := d2tmo
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogen_d2_defconfig
+TARGET_KERNEL_CONFIG        := cyanogen_d2att_defconfig
 
