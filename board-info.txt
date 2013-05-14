@@ -1,2 +1,2 @@
-require version-bootloader=T999UVDLJA|T999UVDLJC|T999UVDMD5
+require version-bootloader=T999UVDLJA|T999UVDLJC|T999UVDMD5|T999VVLDLL1
 
