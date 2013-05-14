@@ -1,0 +1,2 @@
+require version-bootloader=T999UVDLJA|T999UVDLJC|T999UVDMD5
+
