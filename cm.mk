@@ -1,8 +1,5 @@
 $(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
-
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
