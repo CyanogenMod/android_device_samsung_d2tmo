@@ -1,8 +1,5 @@
 $(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=d2uc \
     TARGET_DEVICE=d2tmo \
